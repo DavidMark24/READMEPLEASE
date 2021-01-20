@@ -16,7 +16,8 @@ To create README files through Node.js and Inquirer.
 ## Contributing
 Node.js and Inquirer. & DavidMark24 (me)
 ## Live Demo
-https://user-images.githubusercontent.com/72535444/105154027-f0311780-5abd-11eb-9642-150fb23859b7.mp4
+
+<a href= "https://user-images.githubusercontent.com/72535444/105154027-f0311780-5abd-11eb-9642-150fb23859b7.mp4"> Live Demo </a>
 
 ## License
 MIT
