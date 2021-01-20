@@ -6,7 +6,7 @@ It's magic before your eyes!
 * [Installation](#installation)
 * [Usage](#usage)
 * [Contributing](#contributing)
-* [Tests](#tests)
+* [Demostration](#demostration)
 * [License](#license)
 * [Questions](#questions)
 ## Installation
