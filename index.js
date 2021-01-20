@@ -2,7 +2,7 @@
 
 const inquirer = require('inquirer')
 const fs = require('fs')
-const markdown = require('./utils/generateMarkdown')
+const markdown = require("./utils/generateMarkdown.js")
 
 // Inquirer Questions
 
@@ -28,10 +28,14 @@ const questions = [
      message: "Please provide the project usage"
     },
     {
-    type: "list",
+    type: "checkbox",
     name: "licence",
     message: "Please provide the project licence",
-    choices:["Apache license 2.0', 'Creative Commons license family', 'MIT', 'Mozilla Public License 2.0"]
+    choices:[
+    'Apache license 2.0',
+    'Creative Commons license family',
+    'MIT',
+    'Mozilla Public License 2.0']
     },
     {
     type: "input",
@@ -61,9 +65,9 @@ function init() {
     inquirer.prompt(questions).then(answers => {
         console.log("Answers", answers);
 
-        const markdown = generateMarkdown(answers);
+        let generateMarkdown = markdown(answers);
 
-        fs.writeFile('README.md', markdown, () => {console.log("Poof! README successful!)");});
+        fs.writeFile('README.md', generateMarkdown, () => {console.log("Poof! README successful!)");});
     })
 }
 
