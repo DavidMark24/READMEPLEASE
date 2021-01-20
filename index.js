@@ -29,7 +29,7 @@ const questions = [
     },
     {
     type: "checkbox",
-    name: "licence",
+    name: "license",
     message: "Please provide the project licence",
     choices:[
     'Apache license 2.0',
@@ -67,7 +67,7 @@ function init() {
 
         let generateMarkdown = markdown(answers);
 
-        fs.writeFile('README.md', generateMarkdown, () => {console.log("Poof! README successful!)");});
+        fs.writeFile('sample/README.md', generateMarkdown, () => {console.log("Poof! README successful!)");});
     })
 }
 
