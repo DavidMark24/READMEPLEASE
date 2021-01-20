@@ -14,6 +14,16 @@ function generateMarkdown(data) {
                  `Or you can email me at: ${data.email}`
     };
 
+  
+    answerData.toc = "## Table of Contents\n" + "* [Installation](#installation)\n" + "* [Usage](#usage)\n" +
+                     "* [Contributing](#contributing)\n" + "* [Tests](#tests)\n" + "* [License](#license)\n" +
+                     "* [Questions](#questions)\n"
+  
+    const ReadMe = "";
+    for (key in answerData) {
+      ReadMe += answerData[key];
+    }
+    return ReadMe;
   }
   
-  
+  module.exports = generateMarkdown;
